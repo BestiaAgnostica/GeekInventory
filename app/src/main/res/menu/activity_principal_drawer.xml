@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_IngresarProducto"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/ingresar_producto" />
+        <item
+            android:id="@+id/nav_catalogo_de_productos"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/catalogodeproductos" />
+        <item
+            android:id="@+id/nav_realizar_venta"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/realizarventa" />
+        <item
+            android:id="@+id/nav_reportes"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/reportes" />
+        <item android:title="@string/agregar_proveedor"
+            android:id="@+id/nav_agregar_proveedor" />
+        <item android:title="@string/buscar_proveedor"
+            android:id="@+id/nav_buscar_proveedor" />
+        <item android:title="@string/agregar_cliente"
+            android:id="@+id/nav_agregar_cliente" />
+        <item android:title="@string/buscar_cliente"
+            android:id="@+id/nav_buscar_cliente" />
+        <item android:title="@string/carrito"
+            android:id="@+id/nav_carrito" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:title="@string/configuracion_avanzada"
+                android:id="@+id/nav_configuracion_avanzada" />
+            <item
+                android:id="@+id/nav_respaldar"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/respaldar" />
+            <item
+                android:id="@+id/nav_contactar_desarrollador"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/contactar_al_desarrollador" />
+            <item android:title="@string/manual_del_usuario"
+                android:id="@+id/nav_manual_del_usuario" />
+        </menu>
+    </item>
+    <group >
+        <item android:title="@string/salir"
+            android:id="@+id/nav_salir" />
+    </group>
+
+</menu>

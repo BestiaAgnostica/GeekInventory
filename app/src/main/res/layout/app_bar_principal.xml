@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.smartapps.geekinventory.Principal">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/appBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+
+    <include
+        layout="@layout/content_principal"
+        android:layout_height="0dp"
+        android:id="@+id/include2"
+        android:layout_width="0dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:text="@string/ingresar_producto"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btn_IngresarProducto"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        style="@style/Widget.AppCompat.Button"
+        tools:style="@style/Widget.AppCompat.Button"
+        android:background="@android:color/holo_orange_dark" />
+
+    <Button
+        android:layout_width="150dp"
+        android:id="@+id/btn_CatalogoDeProductos"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="70dp"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_IngresarProducto"
+        app:layout_constraintVertical_bias="1.0"
+        android:layout_height="150dp"
+        android:text="@string/catalogodeproductos"
+        android:background="@android:color/holo_blue_light" />
+
+    <Button
+        android:text="@string/realizarventa"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btn_RealizarVenta"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/btn_CatalogoDeProductos"
+        app:layout_constraintRight_toRightOf="@+id/btn_IngresarProducto"
+        android:background="@android:color/holo_green_dark" />
+
+    <Button
+        android:text="@string/reportes"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btn_Reportes"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_CatalogoDeProductos"
+        app:layout_constraintTop_toTopOf="@+id/btn_RealizarVenta"
+        android:background="@android:color/holo_orange_dark" />
+
+</android.support.constraint.ConstraintLayout>
